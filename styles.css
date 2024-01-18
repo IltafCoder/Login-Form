@@ -1,0 +1,128 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #2f3136;
+    --gray-light: #4d4f55;
+    --gray-light-hover: #5a5c5f;
+    --bg: #18191c;
+    --btn-bg: #4e525c;
+    --btn-bg-hover: #6a6e76;
+    --place-holder: rgb(194, 193, 193);
+    --selection: rgb(224, 221, 221);
+    --primary: #00ddff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg);
+    height: 100vh;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--bg);
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form > div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.form {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 221, 255, 0.8);
+    background-color: var(--gray);
+    padding: 20px;
+}
+
+h1 {
+    color: var(--white);
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+input[type=text], input[type=password] {
+    height: 50px;
+    width: 300px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: var(--gray-light);
+    outline: none;
+    border: none;
+    transition: 0.3s;
+    padding-left: 15px;
+    border-bottom: 3px solid transparent;
+    color: var(--white);
+    font-family: 'Lato', sans-serif;
+    font-size: 0.9rem;
+}
+
+input[type=text]:hover, input[type=password]:hover {
+    background-color: var(--gray-light-hover);
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    border-bottom: 3px solid var(--primary);
+}
+
+input[type=text]::placeholder, input[type=password]::placeholder {
+    color: var(--place-holder);
+}
+
+input[type=button] {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: var(--btn-bg);
+    color: var(--white);
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+    border: none;
+    transition: 0.2s;
+}
+
+input[type=button]:hover {
+    background-color: var(--btn-bg-hover);
+}
+
+input[type=checkbox] {
+    position: relative;
+    bottom: -2px;
+    accent-color: var(--primary);
+}
+
+span {
+    color: var(--white);
+    font-family: 'Lato', sans-serif;
+    font-size: 0.8rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 0.8rem;
+    font-family: 'Lato', sans-serif;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--primary);
+}
